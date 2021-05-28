@@ -1,0 +1,113 @@
+.feedbacks__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 .8rem; }
+
+.feedbacks__title {
+  margin-bottom: 1.8rem; }
+
+.feedbacks__content {
+  display: none; }
+
+.active-content {
+  display: flex;
+  min-height: 19.3rem;
+  background-color: #f8faf9;
+  padding: 2.3rem;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  margin-bottom: .8rem; }
+
+.feedback__autor {
+  margin-right: 2.3rem; }
+
+.feedback__textblock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.feedback__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 1.5rem; }
+
+.feedback__text {
+  font-family: Play;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+  margin-bottom: 2.1rem; }
+
+.feedback__autor-name {
+  font-weight: 700; }
+
+.feedbacks__switcher {
+  display: flex;
+  justify-content: center; }
+
+.feedbacks__link {
+  width: 4rem;
+  height: 4rem;
+  overflow: hidden;
+  display: block;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  position: relative;
+  transition: all .3s; }
+  .feedbacks__link img {
+    position: absolute;
+    transform: translate(-7px); }
+
+.feedbacks__item-active a {
+  border: 4px solid red; }
+
+@media (max-width: 768px) {
+  .feedbacks__container {
+    width: 100%; }
+
+  .active-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+
+  .feedback__autor {
+    margin-top: 1rem;
+    margin-right: 0;
+    margin-bottom: 1.5rem; }
+
+  .feedback__autor img {
+    max-width: 17em;
+    max-height: 17rem; }
+
+  .feedback__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 1rem; } }
+@media (max-width: 480px) {
+  .feedback__autor img {
+    max-width: 14em;
+    max-height: 14rem; }
+
+  .feedbacks__container {
+    width: 100%;
+    padding: 0 0.4rem; }
+
+  .feedbacks__content::after {
+    padding: 1rem;
+    display: none; }
+
+  .feedbacks__title {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 1.5rem; }
+
+  .feedbacks__link img {
+    width: 10rem;
+    height: 410em;
+    position: absolute;
+    transform: translate(-5px); } }
