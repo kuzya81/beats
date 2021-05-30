@@ -660,10 +660,6 @@ a {
   .controls {
     justify-content: center; } }
 .contacts-section {
-  background-image: url(../img/map_static.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   min-height: 100vh;
   position: relative; }
 
@@ -1027,11 +1023,18 @@ a {
 .player__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 .player__content {
   height: 390px;
   max-width: 660px; }
+
+.player__controls {
+  position: absolute;
+  height: 50px;
+  bottom: 0;
+  background-color: gray; }
 
 @media (max-width: 768px) {
   .player__content {
