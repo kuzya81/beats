@@ -82,7 +82,7 @@ $("[data-scroll-to]").click(e=>{
 });
 
 $("body").swipe( {
-      swipe:function(event, direction,) {
+      swipe:function(event, direction) {
         const scroller = viewportScroller();
         let scrollDirection ="";
         
