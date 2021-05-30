@@ -19,18 +19,24 @@
 <body>
     <div class="wrapper" id="wrapper">
         <div class="maincontent">
-            <section class="section hero">
+            <section data-section-id="hero" class="section hero" data-section-id="hero">
                 <div class="container hero__container">
                     <header class="header">
                         <a href="#"><img class="logo header__logo" src="img/logo.png" alt="logo"></a>
                         <nav class="menu">
                             <ul class="menu__list">
-                                <li class="menu__list-item"><a href="#" class="menu__link">О нас</a></li>
-                                <li class="menu__list-item"><a href="#" class="menu__link">Наушники</a></li>
-                                <li class="menu__list-item"><a href="#" class="menu__link">Команда</a></li>
-                                <li class="menu__list-item"><a href="#" class="menu__link">Цвета</a></li>
-                                <li class="menu__list-item"><a href="#" class="menu__link">Отзывы</a></li>
-                                <li class="menu__list-item"><a href="#" class="menu__link">Как мы работаем</a></li>
+                                <li class="menu__list-item"><a href="#" data-scroll-to="reason" class="menu__link">О
+                                        нас</a></li>
+                                <li class="menu__list-item"><a href="#" data-scroll-to="shop"
+                                        class="menu__link">Наушники</a></li>
+                                <li class="menu__list-item"><a href="#" data-scroll-to="team"
+                                        class="menu__link">Команда</a></li>
+                                <li class="menu__list-item"><a href="#" data-scroll-to="slider"
+                                        class="menu__link">Цвета</a></li>
+                                <li class="menu__list-item"><a href="#" data-scroll-to="feedbacs"
+                                        class="menu__link">Отзывы</a></li>
+                                <li class="menu__list-item"><a href="#" data-scroll-to="order" class="menu__link">Как мы
+                                        работаем</a></li>
                                 <li class="menu__list-item"><a href="#" class="menu__link">Контакты</a></li>
                             </ul>
                         </nav>
@@ -80,7 +86,7 @@
             </section>
 
             <!-- Секция "почему" -->
-            <section class="section reason">
+            <section data-section-id="reason" class="section reason">
                 <div class="container container-reason">
                     <h2 class="title reason__title">
                         почему beats solo 3?
@@ -139,7 +145,7 @@
                 </div>
             </section>
             <!-- секция со слайдером -->
-            <section class="section shop">
+            <section data-section-id="shop" class="section shop">
                 <div class="container shop-container">
                     <ul class="shop__slider">
 
@@ -295,7 +301,7 @@
             <!-- секция с командой
         вертикальный аккордион -->
 
-            <section class="section team">
+            <section data-section-id="team" class="section team">
                 <div class="container team__container">
                     <h2 class="title team__title">
                         команда
@@ -368,7 +374,7 @@
             </section>
 
             <!-- секция горизонтальный аккордион -->
-            <section class="section slider">
+            <section data-section-id="slider" class="section slider">
                 <div class="container slider__container">
                     <div class="slider__title">
                         цвета
@@ -416,7 +422,7 @@
 
 
             <!-- Секция отзывы -->
-            <section class="section feedbacks">
+            <section data-section-id="feedbacks" class="section feedbacks">
                 <div class="container feedbacks__container">
                     <h2 class=" title feedbacks__title">
                         отзывы
@@ -505,8 +511,17 @@
                     </ul>
                 </div>
             </section>
-
-            <section class="section order-section">
+            <section class="section player__section">
+                <div class="container player__container">
+                    <h2 class="title player__title">
+                        как мы работаем
+                    </h2>
+                    <div class="player__wrapper">
+                        
+                    </div>
+                </div>
+            </section>
+            <section data-section-id="order" class="section order-section">
                 <div id="modal" class="modal">
                     <div class="modal__container">
                         <div class="modal__content">
@@ -619,7 +634,7 @@
                 </div>
             </section>
 
-            <section class="section contacts-section">
+            <section data-section-id="contacts" class="section contacts-section">
                 <div class="footer">
                     <div class="container footer__container">
                         <div class="contacts footer__textblock">
@@ -653,16 +668,16 @@
                 </div>
             </section>
         </div>
-        <ul class="page">
-            <li class="page__point page__point-active"><a href="#" class="page__link"></a></li>
-            <li class="page__point"><a href="#" class="page__link"></a></li>
-            <li class="page__point"><a href="#" class="page__link"></a></li>
-            <li class="page__point"><a href="#" class="page__link"></a></li>
-            <li class="page__point"><a href="#" class="page__link"></a></li>
-            <li class="page__point"><a href="#" class="page__link"></a></li>
-            <li class="page__point"><a href="#" class="page__link"></a></li>
-            <li class="page__point"><a href="#" class="page__link"></a></li>
-            <li class="page__point"><a href="#" class="page__link"></a></li>
+        <ul class="page" >
+            <li class="page__point page__point-active"><a href="" data-scroll-to="hero" class="page__link"></a></li>
+            <li class="page__point"><a href="" class="page__link" data-scroll-to="reason"></a></li>
+            <li class="page__point"><a href="" class="page__link" data-scroll-to="shop"></a></li>
+            <li class="page__point"><a href="" class="page__link" data-scroll-to="team"></a></li>
+            <li class="page__point"><a href="" class="page__link" data-scroll-to="slider"></a></li>
+            <li class="page__point"><a href="" class="page__link" data-scroll-to="feedbacks"></a></li>
+            <li class="page__point"><a href="" class="page__link" data-scroll-to="order"></a></li>
+            <li class="page__point"><a href="" class="page__link" data-scroll-to="contacts"></a></li>
+            <li class="page__point"><a href="" class="page__link"></a></li>
         </ul>
     </div>
     <div class="overlay">
@@ -687,6 +702,7 @@
     <script src="form.js"></script>
     <script src="main.js"></script>
     <script src="one.screen.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
 </body>
 
 </html>
