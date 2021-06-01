@@ -477,8 +477,8 @@ a {
     margin-bottom: 1.5rem; }
 
   .feedbacks__link img {
-    width: 10rem;
-    height: 410em;
+    width: 4rem;
+    height: 4rem;
     position: absolute;
     transform: translate(-5px); } }
 .order-section {
@@ -667,7 +667,8 @@ a {
   position: absolute;
   bottom: 0;
   background-color: #fff;
-  width: 100%; }
+  width: 100%;
+  z-index: 10; }
 
 .footer__textblock {
   display: flex;
@@ -755,10 +756,15 @@ a {
   height: 100%;
   cursor: pointer; }
 
+.slider__title-content {
+  transform: rotate(-90deg);
+  font-weight: bold;
+  font-size: 36px; }
+
 .slider__item-content {
   display: none;
   width: 0;
-  font-size: 15px;
+  font-size: 14px;
   padding: 0; }
 
 .black {
@@ -767,6 +773,22 @@ a {
 .red {
   background-color: #E01F3C; }
 
+@media (max-width: 480px) {
+  .slider__title-content {
+    transform: rotate(-90deg);
+    font-weight: bold;
+    font-size: 14px; }
+
+  .slider__title {
+    display: flex;
+    padding-top: 6.4rem;
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+    font-family: Play;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 52px;
+    text-transform: uppercase; } }
 * {
   box-sizing: border-box; }
 
@@ -1024,17 +1046,68 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative; }
+  position: relative;
+  max-width: 660px;
+  margin: auto; }
 
-.player__content {
-  height: 390px;
-  max-width: 660px; }
+.player__start {
+  width: 11px;
+  height: 16px;
+  background-image: url("../img/playerStart.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.paused .player__start {
+  background-image: url("../img/pausedicon.png"); }
+
+.player__duration {
+  color: #FFF; }
 
 .player__controls {
   position: absolute;
-  height: 50px;
+  height: 2.5rem;
   bottom: 0;
-  background-color: gray; }
+  left: 0;
+  right: 0;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  background-color: #3e3e3e; }
+
+.player__playback {
+  height: 16px;
+  width: 70%;
+  position: relative; }
+  .player__playback::before {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333; }
+
+.player__playback-completed {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 10%;
+  background-color: #E01F3D; }
+
+.player__playback-button {
+  width: 13px;
+  height: 13px;
+  border: none;
+  border-radius: 50%;
+  background-color: #E01F3D;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%; }
 
 @media (max-width: 768px) {
   .player__content {

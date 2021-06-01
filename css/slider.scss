@@ -51,10 +51,15 @@
     height: 100%;
     cursor: pointer;
 }
+.slider__title-content{
+    transform: rotate(-90deg);
+    font-weight: bold;
+    font-size: 36px;
+}
 .slider__item-content{
     display: none;
     width: 0;
-    font-size: 15px;
+    font-size: 14px;
     padding: 0;
 }
 .black{
@@ -63,3 +68,23 @@
 .red{
     background-color: #E01F3C;
 }
+
+@media (max-width:480px){
+
+   .slider__title-content{
+    transform: rotate(-90deg);
+    font-weight: bold;
+    font-size: 14px;
+}
+.slider__title{
+    display: flex;
+    padding-top: 6.4rem;
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+    font-family: Play;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 52px;
+    text-transform: uppercase;
+}
+ }
