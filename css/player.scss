@@ -5,6 +5,7 @@
     position: relative;
     max-width: 660px;
     margin: auto;
+    width: 90%;
 }
 
 .player__start{
@@ -75,7 +76,7 @@
 
 @media (max-width:768px){
   .player__content{
-      max-width: 90%;
+      width: 100%;
   }
   .player__title{
       font-size: 26px;
