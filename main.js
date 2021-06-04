@@ -2,17 +2,18 @@ const burgerBtn = document.querySelector(".burger");
 const overlay = document.querySelector( ".overlay");
 const wrapper = document.querySelector (".wrapper");
 const closeBtn = document.querySelector (".closeBtn");
-const gearBtn = document.querySelector (".gear-btn");
-const gearBtnMenu = document.querySelector (".gear-btn__menu");
 
-gearBtn.addEventListener('mouseover', e=>{
-    e.preventDefault();
-    gearBtnMenu.style.display = 'block';
- });
- gearBtn.addEventListener('mouseout', e=>{
+const gearBtn = document.querySelector (".gear-btn");
+ const gearBtnMenu = document.querySelector (".gear-btn__menu")
+ gearBtn.addEventListener('mouseover', e=>{
      e.preventDefault();
-     gearBtnMenu.style.display = 'none';
+     gearBtnMenu.style.display = 'block';
   });
+  gearBtn.addEventListener('mouseout', e=>{
+      e.preventDefault();
+      gearBtnMenu.style.display = 'none';
+   });
+
 
 burgerBtn.addEventListener('click', e=>{
     wrapper.style.display = 'none';

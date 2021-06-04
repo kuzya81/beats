@@ -16,7 +16,8 @@ body {
   height: 100%;
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: normal;
-  color: #292929; }
+  color: #292929;
+  position: relative; }
 
 ul {
   list-style: none;
@@ -788,6 +789,9 @@ a {
     font-weight: bold;
     font-size: 14px; }
 
+  .slider__item-title {
+    width: 40px; }
+
   .slider__title {
     display: flex;
     padding-top: 6.4rem;
@@ -1131,7 +1135,7 @@ a {
   width: 100%;
   height: 100%;
   z-index: 1000;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1139,8 +1143,10 @@ a {
   background-color: black;
   text-align: center;
   font-size: 36px;
-  line-height: 72px;
-  display: none; }
+  line-height: 72px; }
+
+.overlay-opened {
+  display: flex; }
 
 .closeBtn {
   color: white;

@@ -1,97 +1,78 @@
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .shop {
   height: 100%;
-  background-color: #F8FAF9;
-}
+  background-color: #F8FAF9; }
 
 .shop-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 60rem;
-}
+  max-width: 60rem; }
 
 .shop__slider-element {
   display: flex;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
 
 .shop__slider-container {
   display: flex;
   justify-content: space-between;
-  min-width: 100%;
-}
+  min-width: 100%; }
 
 .shop__img {
   min-width: 450px;
-  min-height: 450px;
-}
+  min-height: 450px; }
 
 .shop__content {
   margin-left: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .shop__title {
   font-size: 40px;
   text-align: left;
-  margin-bottom: 1.5rem;
-}
+  margin-bottom: 1.5rem; }
 
 .gear-btn {
   margin-bottom: 1.5rem;
-  position: relative;
-}
+  position: relative; }
 
 .shop__text {
-  margin-bottom: 1.5rem;
-}
+  margin-bottom: 1.5rem; }
 
 .shop__benefits {
-  display: flex;
-}
+  display: flex; }
 
 .benefits__content {
-  font-weight: 700;
-}
+  font-weight: 700; }
 
 .benefits {
   margin-left: 3rem;
-  margin-bottom: 1.5rem;
-}
-.benefits:first-child {
-  margin-left: 0;
-}
+  margin-bottom: 1.5rem; }
+  .benefits:first-child {
+    margin-left: 0; }
 
 .shop__price-item {
   display: flex;
-  align-items: baseline;
-}
+  align-items: baseline; }
 
 .shop__price {
-  font-size: 36px;
-}
+  font-size: 36px; }
 
 .shop__btn {
   margin-right: auto;
-  margin-left: auto;
-}
+  margin-left: auto; }
 
 .left-arrow {
   margin-right: 1rem;
-  margin-left: 1rem;
-}
+  margin-left: 1rem; }
 
 .right-arrow {
   margin-left: 1rem;
-  margin-right: 1rem;
-}
+  margin-right: 1rem; }
 
 .gear-btn__menu {
   width: 270px;
@@ -100,17 +81,14 @@
   display: none;
   position: absolute;
   left: 90px;
-  top: 0;
-}
+  top: 0; }
 
 .gear-btn__menu {
-  padding: 20px;
-}
+  padding: 20px; }
 
 .menu-item {
   display: flex;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
 
 .bx-wrapper {
   background-color: transparent;
@@ -118,82 +96,65 @@
   box-shadow: none;
   box-sizing: border-box;
   min-width: 100%;
-  z-index: 10000;
-}
+  z-index: 10000; }
 
 .bx-wrapper .bx-prev {
   position: absolute;
   left: -35px;
   background: url(../img/leftArrow.svg);
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
 
 .bx-wrapper .bx-next {
   position: absolute;
   right: -35px;
   background: url(../img/rightArrow.svg);
   background-repeat: no-repeat;
-  background-position: right;
-}
+  background-position: right; }
 
 @media (max-width: 768px) {
   .shop__slider-element {
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-  }
+    align-items: center; }
 
   .bx-next {
-    display: none;
-  }
+    display: none; }
 
   .bx-prev {
-    display: none;
-  }
+    display: none; }
 
   .shop__img {
     max-width: 25rem;
-    max-height: 25rem;
-  }
+    max-height: 25rem; }
 
   .gear-btn {
-    display: none;
-  }
+    display: none; }
 
   .shop__title {
     margin-top: 2rem;
-    text-align: center;
-  }
+    text-align: center; }
 
   .shop__text {
-    text-align: center;
-  }
+    text-align: center; }
 
   .shop__benefits {
-    justify-content: center;
-  }
+    justify-content: center; }
 
   .shop__price-item {
     justify-content: center;
     text-align: center;
     margin-left: auto;
-    margin-right: auto;
-  }
+    margin-right: auto; }
 
   .shop__price {
-    margin-right: 2rem;
-  }
-}
+    margin-right: 2rem; } }
 @media (max-width: 480px) {
   .shop__img {
     min-width: 16rem;
-    min-height: 16rem;
-  }
+    min-height: 16rem; }
 
   .shop__title {
     font-size: 25px;
     line-height: 30px;
     text-align: center;
-    margin-bottom: 3rem;
-  }
-}/*# sourceMappingURL=shop.css.map */
+    margin-bottom: 3rem; } }
