@@ -7,7 +7,7 @@ const mesureWidth = item =>{
     const isMobile = window.matchMedia("(max-width: 768px)").matches;
     if(isMobile){
 
-        return screenWidth - titleWidth -(titleWidth/5);
+        return screenWidth - titleWidth -(titleWidth/4.8);
     } else{
         return 500;
     };
